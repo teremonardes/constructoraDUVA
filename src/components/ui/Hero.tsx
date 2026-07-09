@@ -25,7 +25,7 @@ export default function Hero({
         alt={title}
         fill
         priority
-        className="object-cover"
+        className="object-cover"  
       />
 
       {/* Overlay */}

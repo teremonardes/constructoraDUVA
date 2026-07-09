@@ -8,10 +8,7 @@ export default function ContactForm() {
   if (state.succeeded) {
     return (
       <div className="text-center py-10">
-        <h3 className="text-2xl font-semibold mb-3">
-          Mensaje enviado
-        </h3>
-
+        <h3 className="text-2xl font-semibold mb-3">Mensaje enviado</h3>
         <p className="text-gray-600">
           Gracias por contactarnos. Te responderemos a la brevedad.
         </p>
@@ -20,14 +17,9 @@ export default function ContactForm() {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="space-y-5"
-    >
+    <form onSubmit={handleSubmit} className="space-y-5">
       <div>
-        <label className="block mb-2 text-sm font-medium">
-          Nombre
-        </label>
+        <label className="block mb-2 text-sm font-medium">Nombre</label>
 
         <input
           type="text"
@@ -51,9 +43,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block mb-2 text-sm font-medium">
-          Teléfono
-        </label>
+        <label className="block mb-2 text-sm font-medium">Teléfono</label>
 
         <input
           type="tel"
@@ -63,9 +53,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block mb-2 text-sm font-medium">
-          Mensaje
-        </label>
+        <label className="block mb-2 text-sm font-medium">Mensaje</label>
 
         <textarea
           name="mensaje"
@@ -80,9 +68,7 @@ export default function ContactForm() {
         disabled={state.submitting}
         className="w-full rounded-full bg-[var(--primary)] text-white py-4 font-medium hover:opacity-90 transition"
       >
-        {state.submitting
-          ? "Enviando..."
-          : "Enviar mensaje"}
+        {state.submitting ? "Enviando..." : "Enviar mensaje"}
       </button>
     </form>
   );
