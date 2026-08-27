@@ -3,6 +3,7 @@ import Hero from "@/src/components/ui/Hero";
 import AboutSection from "@/src/components/sections/about";
 import ClientsSection from "@/src/components/sections/clients";
 import MissionVisionSection from "@/src/components/sections/missionvision";
+import ServicesSection from "@/src/components/sections/services";
 
 export default function Home() {
   return (
@@ -17,9 +18,12 @@ export default function Home() {
 
       <ClientsSection />
 
-      <div className="bg-[var(--primary-light)]">
+<div className="bg-[var(--primary-light)]">
+    <ServicesSection />
+</div>
+  
         <MissionVisionSection />
-      </div>
+    
     </main>
   );
 }

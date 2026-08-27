@@ -62,22 +62,22 @@ export default function ClientesSection() {
             />
           </div>
           <div className="mt-20 border-t border-gray-200 pt-12">
-  <h3 className="mb-10 text-center text-xl font-semibold text-gray-700">
-    Algunos de nuestros principales clientes y aliados
-  </h3>
+            <h3 className="mb-10 text-center text-xl font-semibold text-gray-700">
+              Algunos de nuestros principales clientes y aliados
+            </h3>
 
-  <div className="flex flex-wrap items-center justify-center gap-12">
-    {logos.map((logo) => (
-      <div
-        key={logo.name}
-        className="flex h-28 w-48 items-center justify-center"
-      >
-        <Image
-          src={logo.src}
-          alt={logo.name}
-          width={logo.width}
-          height={logo.height}
-          className="
+            <div className="flex flex-wrap items-center justify-center gap-12">
+              {logos.map((logo) => (
+                <div
+                  key={logo.name}
+                  className="flex h-28 w-48 items-center justify-center"
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.name}
+                    width={logo.width}
+                    height={logo.height}
+                    className="
             max-h-24
             w-auto
             object-contain
@@ -89,11 +89,11 @@ export default function ClientesSection() {
             hover:opacity-100
             hover:scale-105
           "
-        />
-      </div>
-    ))}
-  </div>
-</div>
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </Container>
       </section>
     </main>
